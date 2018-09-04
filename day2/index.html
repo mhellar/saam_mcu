@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Electronic Artworks: A Weekend Workshop</title>
+    <title>SI TBMA: Microcontroller Workshop: Day 2</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,30 +30,33 @@
         <div class="slides">
             <section data-background="img/background.png">
                 <figure>
-                    <h2 class="intro">Electronic Artworks: A Weekend Workshop</h2 class="intro">
-                    <h2 class="intro">Electronic Artworks: A Weekend Workshop</h2 class="intro">
-                    <h2 class="intro">Electronic Artworks: A Weekend Workshop</h2 class="intro">
-                    <h2 class="intro">Electronic Artworks: A Weekend Workshop</h2 class="intro">
+                    <h2 class="intro">SI TBMA: Microcontroller Workshop: Day 2</h2 class="intro">
+                    <h2 class="intro">SI TBMA: Microcontroller Workshop: Day 2</h2 class="intro">
+                    <h2 class="intro">SI TBMA: Microcontroller Workshop: Day 2</h2 class="intro">
+                    <h2 class="intro">SI TBMA: Microcontroller Workshop: Day 2</h2 class="intro">
                 </figure>
             </section>
 
             <section data-background="img/background.png" data-background-transition="zoom">
                 <p><b>Slides are here: <br>http://mhellar.github.io/electronicartworks/day2</b></p>
                 <br>
-                <p><b><br><a href="https://github.com/mhellar/electronicartworks/blob/gh-pages/day2/codeDay2.zip">Grab
-                            the code here:
-                            https://github.com/mhellar/electronicartworks/blob/gh-pages/day2/codeDay2.zip</a></b></p>
+                <p><b><br><a href="https://github.com/mhellar/electronicartworks/blob/gh-pages/day2/codeDay2.zip">Grab the
+                            code here: https://github.com/mhellar/electronicartworks/blob/gh-pages/day2/codeDay2.zip
+                        </a></b></p>
             </section>
 
             <section>
                 <ul>
                     <h3>Topics for Today:</h3>
-                    <li class="fragment">Introduction to serial communications</li>
-                    <li class="fragment">Functions Warmup</li>
-                    <li class="fragment">IR Remote</li>
-                    <li class="fragment">Soldering</li>
-                    <li class="fragment">LCD Display</li>
-                    <li class="fragment">Javascript Robotics</li>
+                    <li class="fragment">Warm up: getting to a known good state</li>
+                    <li class="fragment">Introduction to addressable LED's</li>
+                    <li class="fragment">Programming exercise: Writing custom functions</li>
+                    <li class="fragment">Sensor lecture</li>
+                    <li class="fragment">Case study: Breathing Machine, Lynn Hershman Leeson</li>
+                    <li class="fragment">Detecting proximity with the HC-04 ultrasonic rangefinder</li>
+                    <li class="fragment">Introduction to serial communication</li>
+                    <li class="fragment">Introduction to the Johnny Five API for Internet-connected projects</li>
+                    <li class="fragment">Programming exercise: Build a lamp connected to the DC Metro(WMATA) API</li>
                 </ul>
             </section>
 
@@ -84,8 +87,7 @@
                 <p>Upload Receive_Custom_neo.ino</p>
             </section>
             <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/f95i88OSWB4" frameborder="0"
-                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f95i88OSWB4" frameborder="0" allowfullscreen></iframe>
             </section>
             <section>
                 <img src="img/lcd2.jpg"><br>
@@ -109,10 +111,9 @@
                     <li>LCD D4 pin to digital pin 5</li>
                     <li>LCD D5 pin to digital pin 4</li>
                     <li>LCD D6 pin to digital pin 3</li>
-                    <li>LCD D7 pin to digital pin 2</li><br> Additionally, wire a 10k pot to +5V and GND, with it's
-                    wiper (output) to LCD screens VO pin (pin3). A 220 ohm resistor is used to power the backlight of
-                    the display, usually on pin 15 and 16 of
-                    the LCD connector
+                    <li>LCD D7 pin to digital pin 2</li><br> Additionally, wire a 10k pot to +5V and GND, with it's wiper
+                    (output) to LCD screens VO pin (pin3). A 220 ohm resistor is used to power the backlight of the display,
+                    usually on pin 15 and 16 of the LCD connector
             </section>
             <section>
                 <img src="img/lcd.png"><br>
@@ -139,8 +140,7 @@
             </section>
             <section>
                 <h3>
-                    NODEJS IS ESSENTIALLY V8 minus the browser, WITH SOME ADDITIONS SO THAT YOU CAN USE IT TO WRITE
-                    SERVERS.
+                    NODEJS IS ESSENTIALLY V8 minus the browser, WITH SOME ADDITIONS SO THAT YOU CAN USE IT TO WRITE SERVERS.
                     <br>
                     <a href="https://nodejs.org/api/http.html">Node API</a>
                 </h3>
@@ -159,8 +159,8 @@
                 </h3>
             </section>
             <section>
-                <iframe src="https://player.vimeo.com/video/31952864?color=c9ff23" width="800" height="450" frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/31952864?color=c9ff23" width="800" height="450" frameborder="0" webkitallowfullscreen
+                    mozallowfullscreen allowfullscreen></iframe>
             </section>
             <section>
                 <a href="https://wwwwwwwwwwwwwwwwwwwwww.bitnik.org/r/">Random Darknet Shopper</a>
@@ -313,8 +313,8 @@ bart.on('dbrk', function(estimates) {
                 <a href="https://www.npmjs.com/package/bart">https://www.npmjs.com/package/bart</a>
             </section>
             <section>
-                The Bart Module returned something called Javascript Object Notation(JSON)<br> We can easily examine
-                that here:
+                The Bart Module returned something called Javascript Object Notation(JSON)<br> We can easily examine that
+                here:
                 <a href="http://jsonviewer.stack.hu/">http://jsonviewer.stack.hu/</a>
             </section>
 
@@ -338,10 +338,9 @@ bart.on('dbrk', function(estimates) {
             </section>
 
             <section>
-                To use Johnny-Five we need to install Firmata on to our Arduino
-                File->Examples->Firmata->StandardFirmata<br> Firmata is a generic protocol for communicating with
-                microcontrollers from software on a host computer. It is intended to work
-                with any host computer software package.
+                To use Johnny-Five we need to install Firmata on to our Arduino File->Examples->Firmata->StandardFirmata
+                <br> Firmata is a generic protocol for communicating with microcontrollers from software on a host computer.
+                It is intended to work with any host computer software package.
             </section>
 
             <section>
@@ -351,16 +350,16 @@ bart.on('dbrk', function(estimates) {
                 Lets try the LCD control example<br> CD into the j5_lcd folder from the terminal
             </section>
             <section>
-                Lets try the LCD control example<br> CD into the j5_lcd folder from the terminal<br> type 'npm install'<br>
-                run 'node app.js'<br> run 'node app2.js'
+                Lets try the LCD control example<br> CD into the j5_lcd folder from the terminal<br> type 'npm install'<br>                run
+                'node app.js'<br> run 'node app2.js'
             </section>
             <section>
-                Lets try the LCD Bart example<br> CD into the j5_lcd_bart folder from the terminal<br> type 'npm
-                install'<br> run 'node app.js'
+                Lets try the LCD Bart example<br> CD into the j5_lcd_bart folder from the terminal<br> type 'npm install'
+                <br> run 'node app.js'
             </section>
             <section>
-                Lets try the LCD Weather example<br> CD into the j5_lcd_weather folder from the terminal<br> type 'npm
-                install'<br> run 'node app.js'
+                Lets try the LCD Weather example<br> CD into the j5_lcd_weather folder from the terminal<br> type 'npm install'
+                <br> run 'node app.js'
             </section>
 
             <section>
@@ -370,12 +369,12 @@ bart.on('dbrk', function(estimates) {
             </section>
 
             <section>
-                <p>The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and MCU (Micro Controller Unit)
-                    capability produced by Shanghai-based Chinese manufacturer, Espressif Systems.</p>
+                <p>The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and MCU (Micro Controller Unit) capability
+                    produced by Shanghai-based Chinese manufacturer, Espressif Systems.</p>
             </section>
             <section>
-                <p>The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and MCU (Micro Controller Unit)
-                    capability produced by Shanghai-based Chinese manufacturer, Espressif Systems.</p>
+                <p>The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and MCU (Micro Controller Unit) capability
+                    produced by Shanghai-based Chinese manufacturer, Espressif Systems.</p>
             </section>
             <section>
                 <p>The NodeMCU is a mini Arduino with Wifi, that is $10.00!</p>
@@ -383,20 +382,22 @@ bart.on('dbrk', function(estimates) {
             </section>
             <section>
                 <p>
-                    <a="https://github.com/esp8266/Arduino">ESP8266 core for Arduino</a> </p> </section> <section>
-                        <p>
-                            Getting Set up:
-                            <br> - First install the USB driver <a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx">SiLabs
-                                serial driver</a>
-                        </p>
+                    <a="https://github.com/esp8266/Arduino">ESP8266 core for Arduino</a> </p>
+            </section>
+            <section>
+                <p>
+                    Getting Set up:
+                    <br> - First install the USB driver <a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx">SiLabs
+                        serial driver</a>
+                </p>
             </section>
             <section>
                 <p>
                     Getting Set up:
                     <br> - Next go to the Arduino Preferences
                     <br><img src="img/ard-pref.png" height="400">
-                    <br> Enter <b>http://arduino.esp8266.com/stable/package_esp8266com_index.json</b> into Additional
-                    Boards Manager URLs
+                    <br> Enter <b>http://arduino.esp8266.com/stable/package_esp8266com_index.json</b> into Additional Boards
+                    Manager URLs
                 </p>
             </section>
             <section>
@@ -453,8 +454,8 @@ bart.on('dbrk', function(estimates) {
             <section>
                 <p>Public MQTT Server</p><br>
                 <p>In the first type: mosquitto_sub -h ec2-35-167-192-176.us-west-2.compute.amazonaws.com -t /test</p><br>
-                <p>In the second type: mosquitto_pub -h ec2-35-167-192-176.us-west-2.compute.amazonaws.com -t /test -m
-                    "message"</p><br>
+                <p>In the second type: mosquitto_pub -h ec2-35-167-192-176.us-west-2.compute.amazonaws.com -t /test -m "message"
+                </p><br>
             </section>
 
             <section>
