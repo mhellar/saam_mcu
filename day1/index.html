@@ -47,33 +47,37 @@
             <section>
                 <ul>
                     <h3>Topics for Today:</h3>
-                    <li>What is a Microcontroller?</li>
-                    <li>Introduction to the Arduino</li>
-                    <li>Your First Electronic Circuit</li>
-                    <li>Programming the Arduino</li>
-                    <li>Digital Output</li>
-                    <li>Case study: Life Death/Knows Doesn't Know, Bruce Nauman</li>
-                    <li>Digital Input</li>
-                    <li>Analog Input and Output</li>
-                    <li>Controlling motion with servos and stepper motors</li>
-                    <li>Case study: RV (Room Vehicle) PROTOTYPE, Greg Lynn</li>
-                    <li>Soldering exercise</li>
+                    <li class="fragment">What is a Microcontroller?</li>
+                    <li class="fragment">Introduction to the Arduino</li>
+                    <li class="fragment">Your First Electronic Circuit</li>
+                    <li class="fragment">Programming the Arduino</li>
+                    <li class="fragment">Digital Output</li>
+                    <li class="fragment">Case study: Life Death/Knows Doesn't Know, Bruce Nauman</li>
+                    <li class="fragment">Digital Input</li>
+                    <li class="fragment">Analog Input and Output</li>
+                    <li class="fragment">Controlling motion with servos and stepper motors</li>
+                    <li class="fragment">Case study: RV (Room Vehicle) PROTOTYPE, Greg Lynn</li>
+                    <li class="fragment">Soldering exercise</li>
 
                 </ul>
             </section>
 
             <section>
                 <h4>WHAT IS A MICROCONTOLLER:</h4>
-                <p>We know what a computer looks like. It usually has a keyboard, monitor, CPU (Central Processing Unit),
-                    printer, and a mouse. These types of computers, like the Mac or PC, are primarily designed to communicate
+                <p>We know what a computer looks like. It usually has a keyboard, monitor, CPU (Central Processing
+                    Unit),
+                    printer, and a mouse. These types of computers, like the Mac or PC, are primarily designed to
+                    communicate
                     (or “interface”) with humans.
                 </p>
             </section>
 
             <section>
                 <h4>WHAT IS A MICROCONTOLLER:</h4>
-                <p>There are also small computers all around,quietly running programs and quietly doing calculations. These
-                    computers are in your car, on the Space Shuttle, a small toy, and maybe even inside your refrigerator.</p>
+                <p>There are also small computers all around,quietly running programs and quietly doing calculations.
+                    These
+                    computers are in your car, on the Space Shuttle, a small toy, and maybe even inside your
+                    refrigerator.</p>
             </section>
 
             <section>
@@ -85,9 +89,11 @@
 
             <section>
                 <h4>WHAT IS A MICROCONTOLLER:</h4>
-                <p>We call these devices “microcontrollers”. Micro because they’re small, and controller because they “control”
+                <p>We call these devices “microcontrollers”. Micro because they’re small, and controller because they
+                    “control”
                     machines, gadgets, whatever!
-                    <br><br> They’re cool because, you can build a machine or device, write programs to control it and then
+                    <br><br> They’re cool because, you can build a machine or device, write programs to control it and
+                    then
                     let it work for you automatically. And they are cheap!</p>
             </section>
 
@@ -110,22 +116,27 @@
             <section>
 
                 <h4>WHAT IS ARDUINO:</h4>
-                <p>Arduino is an open source physical computing platform based on a simple input/output (I/O) board and a
-                    development environment that implements the Processing language (www.processing.org).<br><br> Arduino
-                    can be used to develop standalone interactive objects or can be connected to software on your computer
+                <p>Arduino is an open source physical computing platform based on a simple input/output (I/O) board and
+                    a
+                    development environment that implements the Processing language (www.processing.org).<br><br>
+                    Arduino
+                    can be used to develop standalone interactive objects or can be connected to software on your
+                    computer
                     (such as Flash, Processing, NodeJS or Max/MSP). !
                 </p>
             </section>
 
             <section>
-                <iframe width="1120" height="630" src="https://www.youtube.com/embed/UoBUXOOdLXY" frameborder="0" allowfullscreen></iframe>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/UoBUXOOdLXY" frameborder="0"
+                    allowfullscreen></iframe>
             </section>
 
             <section>
                 <h3>Arduino is composed of two major parts:</h3>
                 <ul>
                     <li>The Arduino board, which is the piece of hardware you program to control your projects.</li>
-                    <li>The Arduino IDE, the piece of software you run on your computer. You use the IDE to create a sketch(a
+                    <li>The Arduino IDE, the piece of software you run on your computer. You use the IDE to create a
+                        sketch(a
                         program) that you upload to the Arduino board. The sketch tells the board what to do.</li>
                 </ul>
             </section>
@@ -143,18 +154,24 @@
             <section>
 
                 <h4>THE ARDUINO HARDWARE</h4>
-                <p>The Arduino board is a microcontroller board, which is a small circuit (the board) that contains a whole
-                    computer on a small chip (the micro- controller). This computer is at least a thousand times less powerful
-                    than the MacBook I’m using to write this, but it’s a lot cheaper and very useful to build interesting
+                <p>The Arduino board is a microcontroller board, which is a small circuit (the board) that contains a
+                    whole
+                    computer on a small chip (the micro- controller). This computer is at least a thousand times less
+                    powerful
+                    than the MacBook I’m using to write this, but it’s a lot cheaper and very useful to build
+                    interesting
                     devices.
                 </p>
             </section>
             <section>
 
                 <h4>THE ARDUINO HARDWARE</h4>
-                <p>The Arduino design team have placed on this board all of the components that are required for this micro
-                    controller to work properly and to communicate with your computer. There are many versions of this board;
-                    the one we’ll use throughout this book is the Arduino Uno, which is the simplest one to use and the best
+                <p>The Arduino design team have placed on this board all of the components that are required for this
+                    micro
+                    controller to work properly and to communicate with your computer. There are many versions of this
+                    board;
+                    the one we’ll use throughout this book is the Arduino Uno, which is the simplest one to use and the
+                    best
                     one for learning on.</p>
             </section>
             <section>
@@ -168,34 +185,39 @@
 
                 <h4>THE ARDUINO HARDWARE</h4>
                 <img src="img/apins.png" height="400"><br>
-                <p>These dedicated analogue input pins take analog values (i.e., voltage readings from a sensor) and convert
+                <p>These dedicated analogue input pins take analog values (i.e., voltage readings from a sensor) and
+                    convert
                     them into a number between 0 and 1023 we’ll look at this next class</p>
             </section>
 
             <section>
                 <h4>THE ARDUINO HARDWARE</h4>
                 <img src="img/aopins.png" height="400"><br>
-                <p>These are actually six of the digital pins that can be reprogrammed for analog output we’ll look at this
+                <p>These are actually six of the digital pins that can be reprogrammed for analog output we’ll look at
+                    this
                     in the next class</p>
             </section>
             <section>
                 <h4>THE ARDUINO HARDWARE</h4>
                 <img src="img/ppins.png" height="350"><br>
-                <p>These power pins are capable or providing 5.5 volts or 3.3 volts of power. Also there are two pins that
+                <p>These power pins are capable or providing 5.5 volts or 3.3 volts of power. Also there are two pins
+                    that
                     are capable of providing ground any components that you attach to the controller.</p>
             </section>
 
             <section>
                 <h4>THE ARDUINO HARDWARE</h4>
                 <img src="img/usb.png" height="350"><br>
-                <p>The USB connector connects the controller to you computer allowing you to program it. The USB connection
+                <p>The USB connector connects the controller to you computer allowing you to program it. The USB
+                    connection
                     also provides power.</p>
             </section>
 
             <section>
                 <h4>THE ARDUINO HARDWARE</h4>
                 <img src="img/power.png" height="350"><br>
-                <p>The power connector allows you to power your controller independently either with a battery or a power
+                <p>The power connector allows you to power your controller independently either with a battery or a
+                    power
                     supply.
                 </p>
             </section>
@@ -219,18 +241,23 @@
 
             <section>
                 <h4>THE ARDUINO SOFTWARE (IDE)</h4>
-                <p>The IDE (Integrated Development Environment) is a program running on your computer that allows you to
-                    write sketches for the Arduino board in a simple language modeled after the Processing (www.processing.org)
+                <p>The IDE (Integrated Development Environment) is a program running on your computer that allows you
+                    to
+                    write sketches for the Arduino board in a simple language modeled after the Processing
+                    (www.processing.org)
                     language.
                 </p>
             </section>
 
             <section>
                 <h4>THE ARDUINO SOFTWARE (IDE)</h4>
-                <p>The magic happens when you press the button that uploads the sketch to the board: the code that you have
-                    written is translated into the C language (which is generally quite hard for a beginner to use), and
+                <p>The magic happens when you press the button that uploads the sketch to the board: the code that you
+                    have
+                    written is translated into the C language (which is generally quite hard for a beginner to use),
+                    and
                     is compiled into a language that the micro controller understands.
-                    <br><br> This last step is quite important, because it’s where Arduino makes your life easy by hiding
+                    <br><br> This last step is quite important, because it’s where Arduino makes your life easy by
+                    hiding
                     away as much as possible of the complexities of programming microcontrollers.</p>
             </section>
 
@@ -239,14 +266,16 @@
                 <ul>
                     <li>Plug your board into a USB port on your computer.</li>
                     <li>Write a sketch that will make your board do something.</li>
-                    <li>Upload this sketch to the board through the USB connection and wait a couple of seconds for the board
+                    <li>Upload this sketch to the board through the USB connection and wait a couple of seconds for the
+                        board
                         to restart.</li>
                     <li>The board executes the sketch that you wrote.</li>
                 </ul>
             </section>
             <section>
                 <h4>LESSON 1 - BASIC HOUSEKEEPING</h4>
-                <p>This first lesson won't really teach programming the Arduino. It’s meant to introduce you to building
+                <p>This first lesson won't really teach programming the Arduino. It’s meant to introduce you to
+                    building
                     a basic electrical circuit.
                     <br><br> It will also get us prepped for building the rest of the exercises throughout the class.</p>
             </section>
@@ -266,14 +295,11 @@
                 <img src="img/wires.png" height="400"><br>
             </section>
 
-
             <section>
                 <h4>LESSON 1 - Gather The Parts</h4>
                 <p>1 breadboard</p><br>
                 <img src="img/bb.png" height="400"><br>
             </section>
-
-
 
             <section>
                 <h4>LESSON 1 - Gather The Parts</h4>
@@ -295,7 +321,6 @@
 
 
             <section>
-
                 <p>Step 1: connect Arduino to computer with USB cable</p><br>
                 <img src="img/s1.png" height="400"><br>
             </section>
@@ -305,7 +330,8 @@
                 <p>Step 2: connect one side green wire to the ground pin(marked GND)
                 </p>
                 <img src="img/s2.png" height="400"><br>
-                <p>Connect the other side of the green wire to the ground strip on the breadboard marked with a minus sign
+                <p>Connect the other side of the green wire to the ground strip on the breadboard marked with a minus
+                    sign
                     -
                 </p>
             </section>
@@ -314,7 +340,8 @@
 
                 <p>Step 3: connect one side of the yellow wire to the 5 volt pin(marked 5V)</p>
                 <img src="img/s3.png" height="400"><br>
-                <p>Connect the other side of the green wire to the ground strip on the breadboard market with a plus sign
+                <p>Connect the other side of the green wire to the ground strip on the breadboard market with a plus
+                    sign
                     +
                 </p>
             </section>
@@ -332,7 +359,8 @@
             </section>
             <section>
 
-                <p>Step 6: The LED has a long wire and a short wire place that in the same row as the short white wire #11</p>
+                <p>Step 6: The LED has a long wire and a short wire place that in the same row as the short white wire
+                    #11</p>
                 <img src="img/s6.png" height="400"><br>
                 <p>Place short end of the LED in the same row as the resistor #10</p>
             </section>
@@ -347,24 +375,21 @@
 
                 <h4>What’s going on here?</h4>
                 <img src="img/simc.png" height="250"><br>
-                <p>An electric circuit is a closed loop where electric current can flow. Electricity flows like water from
-                    Ground to Positive.</p><br>
+                <p>An electric circuit is a closed loop where electric current can flow. Electricity flows like water
+                    from Ground(gnd) to Positive(VCC).</p><br>
                 <p>As the current passes though a component such as an LED it causes it to light up.</p>
-
             </section>
 
             <section>
-
                 <p>The Arduino is acting as our battery providing 5 volts of electricity.
                 </p>
                 <img src="img/e1.png" height="400"><br>
-
-
             </section>
 
             <section>
 
-                <p>An electric circuit is a closed loop where electric current can flow. Electricity flows like water from
+                <p>An electric circuit is a closed loop where electric current can flow. Electricity flows like water
+                    from
                     Ground to Positive.</p>
                 <img src="img/e2.png" height="400"><br>
                 <p>As the current passes though a component such as an LED it causes it to light up.</p>
@@ -377,13 +402,11 @@
             <section>
 
                 <p>5 Volts is too much electricity for the LED and will burn it out!</p>
-                <p>So before we send electricity to it we need to place a resistor in front of it to limit the electrical
+                <p>So before we send electricity to it we need to place a resistor in front of it to limit the
+                    electrical
                     current.
                 </p>
-
                 <img src="img/led.png" height="150"><br><img src="img/res.png" height="150">
-
-
             </section>
 
             <section>
@@ -399,8 +422,10 @@
 
                 <h4>LESSON 2 -REALLY GETTING STARTED WITH ARDUINO
                 </h4>
-                <p>This lesson will basically get you up and running using the Arduino software and uploading a sketch to
-                    the Arduino board. Once you've completed this step we can continue to the really interesting stuff, which
+                <p>This lesson will basically get you up and running using the Arduino software and uploading a sketch
+                    to
+                    the Arduino board. Once you've completed this step we can continue to the really interesting stuff,
+                    which
                     is when we start writing our own sketches!
                 </p>
 
@@ -448,7 +473,8 @@
             </section>
             <section>
 
-                <p>Once the LED is connected, you need to tell Arduino what to do. This is done through code - that is, a
+                <p>Once the LED is connected, you need to tell Arduino what to do. This is done through code - that is,
+                    a
                     list of instructions that we give the micro- controller to make it do what we want.</p>
             </section>
             <section>
@@ -503,50 +529,43 @@ delay(1000); // waits for a second
                 <p>Arduino expects two functions to exists—one called
                     <b>setup()</b> and one called <b>loop()</b>.
                     <br><br>
-                    <b>setup()</b> is where you put all the code that you want to execute once at the beginning of your program
+                    <b>setup()</b> is where you put all the code that you want to execute once at the beginning of your
+                    program
                     <br><br>
                     <b>loop()</b> contains the core of your program, which is executed over and over again.
                     <br><br> When you power up the board, the code runs; when you want to stop, you just turn it off.</p>
             </section>
 
-
             <section>
-
-                <p><b>// Example 01 : Blinking LED()</b><br> A comment is a useful way for us to write little notes. The
+                <p><b>// Example 01 : Blinking LED()</b><br> A comment is a useful way for us to write little notes.
+                    The
                     preceding title comment just reminds us that this program, Example 01, blinks an LED.</p>
             </section>
-
-
-
-
-
-
             <section>
                 <p><b>void setup()</b><br> This line tells Arduino that the next function will be called setup().</p>
             </section>
-
-
-
-
             <section>
                 <b>{</b> With this opening curly bracket, a block of code begins.
                 <br><br>
                 <b>pinMode(LED, OUTPUT); // sets the digital // pin as output</b>
-                <br><br> pinMode tells Arduino how to configure a certain pin. Digital pins can be used either as INPUT or
+                <br><br> pinMode tells Arduino how to configure a certain pin. Digital pins can be used either as INPUT
+                or
                 OUTPUT.
-                <br><br> In this case, we need an output pin to control our LED, so we place the number of the pin and its
+                <br><br> In this case, we need an output pin to control our LED, so we place the number of the pin and
+                its
                 mode inside the parentheses.
-                <br><br> pinMode is a function, and the words (or numbers) specified inside the parentheses are arguments.
+                <br><br> pinMode is a function, and the words (or numbers) specified inside the parentheses are
+                arguments.
                 INPUT and OUTPUT are constants in the Arduino language.
                 <b>}</b>
                 </p>
             </section>
 
-
             <section>
                 <b>void loop() {
                     <br><br> loop()
-                </b> is where you specify the main behavior of your interactive device. It will be repeated over and over
+                </b> is where you specify the main behavior of your interactive device. It will be repeated over and
+                over
                 again until you switch the board off.</b>
                 </p>
             </section>
@@ -554,9 +573,11 @@ delay(1000); // waits for a second
             <section>
                 <p>
                     <b>digitalWrite(LED, HIGH); // turns the LED on</b>
-                    <br><br> As the comment says, digitalWrite() is able to turn on (or off) any pin that has been configured
+                    <br><br> As the comment says, digitalWrite() is able to turn on (or off) any pin that has been
+                    configured
                     as an OUTPUT.
-                    <br><br> The first argument (in this case, LED) specifies which pin should be turned on or off (remember
+                    <br><br> The first argument (in this case, LED) specifies which pin should be turned on or off
+                    (remember
                     that LED is a constant value that refers to pin 13, so this is the pin that’s switched).
                     <br><br> The second argument can turn the pin on (HIGH) or off (LOW).</b>
                 </p>
@@ -564,37 +585,49 @@ delay(1000); // waits for a second
 
             <section>
                 <p>
-                    Imagine that every output pin is a tiny power socket, like the ones you have on the walls of your apartment. American ones
+                    Imagine that every output pin is a tiny power socket, like the ones you have on the walls of your
+                    apartment. American ones
                     are 110 V, and Arduino works at a more modest 5 V.
-                    <br><br> The magic here is when software becomes hardware. When you write digitalWrite(LED, HIGH), it
+                    <br><br> The magic here is when software becomes hardware. When you write digitalWrite(LED, HIGH),
+                    it
                     turns the output pin to 5 V, and if you connect an LED, it will light up.
-                    <br><br> So at this point in your code, an instruction in software makes something happen in the physical
-                    world by controlling the flow of electricity to the pin. Turning on and off the pin at will now let us
+                    <br><br> So at this point in your code, an instruction in software makes something happen in the
+                    physical
+                    world by controlling the flow of electricity to the pin. Turning on and off the pin at will now let
+                    us
                     translate these into something more visible for a human being; the LED is our actuator</p>
             </section>
 
             <section>
                 <p>
-                    <b>delay(1000); // wait for a second</b><br><br> Arduino has a very basic structure. Therefore, if you
-                    want things to happen with a certain regularity, you tell it to sit quietly and do nothing until it is
-                    time to go to the next step. delay() basically makes the processor sit there and do nothing for the amount
-                    of milliseconds that you pass as an argument. Milliseconds are thousands of seconds; therefore, 1000
+                    <b>delay(1000); // wait for a second</b><br><br> Arduino has a very basic structure. Therefore, if
+                    you
+                    want things to happen with a certain regularity, you tell it to sit quietly and do nothing until it
+                    is
+                    time to go to the next step. delay() basically makes the processor sit there and do nothing for the
+                    amount
+                    of milliseconds that you pass as an argument. Milliseconds are thousands of seconds; therefore,
+                    1000
                     milliseconds equals 1 second. So the LED stays on for one second here.
 
             </section>
 
             <section>
                 <p>
-                    <b>digitalWrite(LED, LOW); // turns the LED off</b><br><br> This instruction now turns off the LED that
-                    we previously turned on. Why do we use HIGH and LOW? Well, it’s an old convention in digital electronics.
-                    HIGH means that the pin is on, and in the case of Arduino, it will be set at 5 V. LOW means 0 V. You
+                    <b>digitalWrite(LED, LOW); // turns the LED off</b><br><br> This instruction now turns off the LED
+                    that
+                    we previously turned on. Why do we use HIGH and LOW? Well, it’s an old convention in digital
+                    electronics.
+                    HIGH means that the pin is on, and in the case of Arduino, it will be set at 5 V. LOW means 0 V.
+                    You
                     can also replace these arguments mentally with ON and OFF.
 
             </section>
 
             <section>
                 <p>
-                    <b>delay(1000); // wait for a second</b><br><br> Here, we delay for another second. The LED will be off
+                    <b>delay(1000); // wait for a second</b><br><br> Here, we delay for another second. The LED will be
+                    off
                     for one second.
                     <br><br>
                     <b>}</b><br> This closing curly bracket marks end of the loop function.
@@ -602,10 +635,14 @@ delay(1000); // waits for a second
             </section>
 
             <section>
-                <p>Before we move on to the next section, I want you to play with the code. For example, reduce the amount
-                    of delay, using different numbers for the on and off pulses so that you can see different blinking patterns.
-                    <br><br> In particular, you should see what happens when you make the delays very small, but use different
-                    delays for on and off . . . there is a moment when something strange happens; this “something” will be
+                <p>Before we move on to the next section, I want you to play with the code. For example, reduce the
+                    amount
+                    of delay, using different numbers for the on and off pulses so that you can see different blinking
+                    patterns.
+                    <br><br> In particular, you should see what happens when you make the delays very small, but use
+                    different
+                    delays for on and off . . . there is a moment when something strange happens; this “something” will
+                    be
                     very useful when we learn about somethng called pulse-width modulation.
                 </p>
             </section>
@@ -678,7 +715,20 @@ delay(i); // set delay based on the value of i
             </section>
 
             <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oGTOq4RGMP4" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oGTOq4RGMP4" frameborder="0"
+                    allowfullscreen></iframe>
+            </section>
+            <section>
+                <h4>Case Study: Bruce Nauman, Life Death/Knows Doesn't Know</h4>
+                <img src="img/nauman.jpg" height="600"><br>
+            </section>
+            <section>
+                <h4>Case Study: Bruce Nauman, Life Death/Knows Doesn't Know</h4>
+                <img src="img/orion.jpg"><br>
+            </section>
+            <section>
+                <h4>Case Study: Bruce Nauman, Life Death/Knows Doesn't Know</h4>
+                <img src="img/IMG_1698.JPG" height="400"><br>
             </section>
 
             <section>
@@ -688,9 +738,8 @@ delay(i); // set delay based on the value of i
             </section>
             <section>
                 <h4>Knight Rider</h4>
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/Mo8Qls0HnWo" frameborder="0" allowfullscreen></iframe>
-
-
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/Mo8Qls0HnWo" frameborder="0"
+                    allowfullscreen></iframe>
             </section>
 
             <section>
@@ -712,8 +761,8 @@ delay(i); // set delay based on the value of i
             </section>
 
             <section>
-                <iframe src="https://player.vimeo.com/video/44480836" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                    allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/44480836" width="1000" height="562" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </section>
 
             <section>
@@ -755,15 +804,21 @@ delay(i); // set delay based on the value of i
                 <img src="img/digiin6.png" height="600">
             </section>
             <section>
-                Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital control is used to
-                create a square wave, a signal switched between on and off. This on-off pattern can simulate voltages in
-                between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on versus
+                Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital
+                control is used to
+                create a square wave, a signal switched between on and off. This on-off pattern can simulate voltages
+                in
+                between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on
+                versus
                 the time that the signal spends off. The duration of "on time" is called the pulse width.
             </section>
             <section>
-                In the graphic below, the green lines represent a regular time period. This duration or period is the inverse of the PWM
-                frequency. In other words, with Arduino's PWM frequency at about 500Hz, the green lines would measure 2 milliseconds
-                each. A call to analogWrite() is on a scale of 0 - 255, such that analogWrite(255) requests a 100% duty cycle
+                In the graphic below, the green lines represent a regular time period. This duration or period is the
+                inverse of the PWM
+                frequency. In other words, with Arduino's PWM frequency at about 500Hz, the green lines would measure 2
+                milliseconds
+                each. A call to analogWrite() is on a scale of 0 - 255, such that analogWrite(255) requests a 100% duty
+                cycle
                 (always on), and analogWrite(127) is a 50% duty cycle (on half the time) for example.
                 <br><img src="img/pwm2.png">
             </section>
@@ -817,7 +872,8 @@ delay(i); // set delay based on the value of i
                     </tr>
                 </table>
             </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
+                data-background-transition="zoom">
                 <h2 class="intro">Upload 'RBG_Pot.ino'</h2>
             </section>
             <section>
@@ -826,12 +882,13 @@ delay(i); // set delay based on the value of i
                 <a href="#" class="navigate-down">
                 </a>
             </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
+                data-background-transition="zoom">
                 <h2 class="intro">Upload 'RBG_Pot_Serial.ino'</h2>
             </section>
             <section>
                 <code>
-                <pre>
+                    <pre>
 int LEDGreen=9;
 int LEDBlue=10;
 int LEDRed=11;
@@ -870,12 +927,13 @@ void loop(){
             </code>
                 </pre>
             </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
+                data-background-transition="zoom">
                 <h2 class="intro">Upload 'SerialMath.ino'</h2>
             </section>
             <section>
                 <code>
-                <pre>
+                    <pre>
 int a = 5;
 int b = 10;
 int c = 20;
@@ -913,13 +971,14 @@ void loop()                     // we need this to be here even though its empty
             </code>
                 </pre>
             </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
+                data-background-transition="zoom">
                 <h3 class="intro">WE can send Serial data as well</h3><br>
                 <h2 class="intro">Upload PhysicalPixel.ino</h2>
             </section>
             <section>
                 <code>
-<pre>
+                    <pre>
 
 
 const int redPin = 9; // the pin that the LED is attached to
@@ -1022,7 +1081,8 @@ void loop() {
                 <a href="https://cpldcpu.wordpress.com/2014/08/27/apa102/">APA102 aka “Superled”</a>
             </section>
             <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/f95i88OSWB4" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f95i88OSWB4" frameborder="0"
+                    allowfullscreen></iframe>
             </section>
         </div>
     </div>
