@@ -55,9 +55,9 @@
                     <li class="fragment">Case study: Life Death/Knows Doesn't Know, Bruce Nauman</li>
                     <li class="fragment">Digital Input</li>
                     <li class="fragment">Analog Input and Output</li>
+                    <li class="fragment">Introduction to serial communication</li>
                     <li class="fragment">Controlling motion with servos and stepper motors</li>
                     <li class="fragment">Case study: RV (Room Vehicle) PROTOTYPE, Greg Lynn</li>
-                    <li class="fragment">Soldering exercise</li>
 
                 </ul>
             </section>
@@ -376,7 +376,7 @@
                 <h4>What’s going on here?</h4>
                 <img src="img/simc.png" height="250"><br>
                 <p>An electric circuit is a closed loop where electric current can flow. Electricity flows like water
-                    from Ground(gnd) to Positive(VCC).</p><br>
+                    from Ground(GND) to Positive(VCC).</p><br>
                 <p>As the current passes though a component such as an LED it causes it to light up.</p>
             </section>
 
@@ -393,20 +393,22 @@
                     Ground to Positive.</p>
                 <img src="img/e2.png" height="400"><br>
                 <p>As the current passes though a component such as an LED it causes it to light up.</p>
-
             </section>
             <section>
                 <img src="img/LED6.jpg" height="300">
             </section>
 
             <section>
-
                 <p>5 Volts is too much electricity for the LED and will burn it out!</p>
                 <p>So before we send electricity to it we need to place a resistor in front of it to limit the
                     electrical
                     current.
                 </p>
                 <img src="img/led.png" height="150"><br><img src="img/res.png" height="150">
+            </section>
+
+            <section>
+                <img src="img/volt_ohm.jpg" height="200">
             </section>
 
             <section>
@@ -428,7 +430,6 @@
                     which
                     is when we start writing our own sketches!
                 </p>
-
 
             </section>
 
@@ -727,9 +728,16 @@ delay(i); // set delay based on the value of i
                 <img src="img/orion.jpg"><br>
             </section>
             <section>
-                <h4>Case Study: Bruce Nauman, Life Death/Knows Doesn't Know</h4>
-                <img src="img/IMG_1698.JPG" height="400"><br>
+                <h4>Optoisolator</h4>
+                <img src="img/Opto2.jpg" height="200"><br>
+                <img src="img/opto.png" height="200"><br>
             </section>
+
+            <section>
+                <h4>Case Study: Bruce Nauman, Life Death/Knows Doesn't Know</h4>
+                <img src="img/IMG_1698.JPG" height="600"><br>
+            </section>
+
 
             <section>
                 <h4>Knight Rider</h4>
@@ -815,12 +823,13 @@ delay(i); // set delay based on the value of i
             <section>
                 In the graphic below, the green lines represent a regular time period. This duration or period is the
                 inverse of the PWM
-                frequency. In other words, with Arduino's PWM frequency at about 500Hz, the green lines would measure 2
+                frequency. In other words, with Arduino's PWM frequency at about 500Hz, the green lines would
+                measure 2
                 milliseconds
                 each. A call to analogWrite() is on a scale of 0 - 255, such that analogWrite(255) requests a 100% duty
                 cycle
                 (always on), and analogWrite(127) is a 50% duty cycle (on half the time) for example.
-                <br><img src="img/pwm2.png">
+                <br><img src="img/pwm2.png" height="300">
             </section>
             </section>
             <section>
@@ -882,50 +891,31 @@ delay(i); // set delay based on the value of i
                 <a href="#" class="navigate-down">
                 </a>
             </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
-                data-background-transition="zoom">
-                <h2 class="intro">Upload 'RBG_Pot_Serial.ino'</h2>
+            <section>
+                The word serial means "one after the other." For example, a serial killer doesn't stop with one murder,
+                but stabs many people one after the other. Serial data transfer is when we transfer data one bit at a
+                time, one right after the other.
             </section>
             <section>
-                <code>
-                    <pre>
-int LEDGreen=9;
-int LEDBlue=10;
-int LEDRed=11;
-
-int sensorPin=0;
-int val;
-
-
-void setup(){
-  Serial.begin(9600);
-}
-
-void loop(){
-  
-  val=analogRead(sensorPin);
-  
-  Serial.print("sensor = " );
-  Serial.println(val);
-
-  if (val<340) {
-    analogWrite(LEDRed,255);
-    analogWrite(LEDBlue,0); 
-    analogWrite(LEDGreen,0);    
-  } else if (val<680) {
-    analogWrite(LEDRed,0);
-    analogWrite(LEDBlue,255); 
-    analogWrite(LEDGreen,0); 
-  } else if (val<1024) {
-    analogWrite(LEDRed,0);
-    analogWrite(LEDBlue,0); 
-    analogWrite(LEDGreen,255);  
-  }
-  delay(10);
-}
-                
-            </code>
-                </pre>
+                Information is passed back & forth between the computer and Arduino by, essentially, setting a pin high
+                or low. Just like we used that technique to turn an LED on and off, we can also send data. One side
+                sets the pin and the other reads it. It's a little like Morse code, where you can use dits and dahs to
+                send messages by telegram. In this case, instead of a long cable, its only a few feet.
+            </section>
+            <section>
+                The baud rate is the rate at which information is transferred in a communication channel. In the serial
+                port context, "9600 baud" means that the serial port is capable of transferring a maximum of 9600 bits
+                per second.
+            </section>
+            <section>
+                <img src="img/ascii_bin.png" height="500">
+            </section>
+            <section>
+                <img src="img/aic17.png" height="500">
+            </section>
+            <section>
+                <img src="img/tty_rs.jpg" height="200"><img src="img/extron.jpeg" height="200"><br>
+                <a href="https://bit.ly/2Nm4rG4">video</a>
             </section>
             <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
                 data-background-transition="zoom">
@@ -941,7 +931,6 @@ int c = 20;
 void setup()                    // run once, when the sketch starts
 {
   Serial.begin(9600);           // set up Serial library at 9600 bps
-
   Serial.println("Here is some math: ");
 
   Serial.print("a = ");
@@ -950,16 +939,12 @@ void setup()                    // run once, when the sketch starts
   Serial.println(b);
   Serial.print("c = ");
   Serial.println(c);
-
   Serial.print("a + b = ");       // add
   Serial.println(a + b);
-
   Serial.print("a * c = ");       // multiply
   Serial.println(a * c);
-  
   Serial.print("c / b = ");       // divide
   Serial.println(c / b);
-  
   Serial.print("b - c = ");       // subtract
   Serial.println(b - c);
 }
@@ -979,7 +964,6 @@ void loop()                     // we need this to be here even though its empty
             <section>
                 <code>
                     <pre>
-
 
 const int redPin = 9; // the pin that the LED is attached to
 const int bluePin = 10; // the pin that the LED is attached to
@@ -1026,63 +1010,24 @@ void loop() {
             </section>
 
             <section>
-                <h3>Introduction to Addressable LEDS</h3>
-                <img src="img/wsring.png" height="200">
-                <img src="img/neostrip.png">
-                <img src="img/ws2811.png">
+                <p>Stepper Motors</p>
+                <img src="img/components_StepperMotor.gif">
             </section>
             <section>
-                <h3>Basic LEDS Need a lot of Wiring</h3>
-                <img src="img/led.png" height="300">
+                Stepper motors are DC motors that move in discrete steps. They have multiple coils that are organized
+                in groups called "phases". By energizing each phase in sequence, the motor will rotate, one step at a
+                time.
+
+                With a computer controlled stepping you can achieve very precise positioning and/or speed control. For
+                this reason, stepper motors are the motor of choice for many precision motion control applications.
             </section>
             <section>
-                <h3>Addressable LEDs provide circuitry to communicate serially</h3>
-                <img src="img/WS2812_c.jpg" height="300">
+                <p>Stepper Motors</p>
+                <img src="img/28byj48.png">
             </section>
-            <section>
-                <h3>Each LED has a chip to receive, decode, drive LED’s and propagate data</h3>
-                <img src="img/rgb-smd-led-with-wit-integrated-ws2812b-chip-type.jpg" height="300">
-            </section>
-            <section>
-                <h3>They are chainable, fairly cheap and have their own resistors etc..</h3>
-                <img src="img/wall.jpg" height="400">
-                <h3>You can drive 10000's from 1 microcontroller</h3>
-            </section>
-            <section>
-                <p>Adafruit has branded these Neopixels</p>
-                <img src="img/ada.png">
-            </section>
-            <section>
-                <p>You can get them for half the price on Ebay as ws2812's</p>
-                <img src="img/ebay.png">
-            </section>
-            <section>
-                <h4>These have a 5v, GND and DIN pin</h4>
-                <img src="img/ring_pins.jpeg" height="400">
-                <h4>Connect 5v to 5v, GND to GND and DIN to Pin6</h4>
-            </section>
-            <section>
-                <p>Import the NeoPixel Library</p>
-                <img src="img/import_library.png">
-            </section>
-            <section>
-                <p>Import the NeoPixel Library</p>
-                <img src="img/neolib.png">
-            </section>
-            <section>
-                <p>Let's try some examples and write our own code!</p>
-            </section>
-            <section>
-                <p>FastLED</p>
-                <a href="http://fastled.io/">Fast LED Library</a>
-            </section>
-            <section>
-                <p>APA102</p>
-                <a href="https://cpldcpu.wordpress.com/2014/08/27/apa102/">APA102 aka “Superled”</a>
-            </section>
-            <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/f95i88OSWB4" frameborder="0"
-                    allowfullscreen></iframe>
+            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
+                data-background-transition="zoom">
+                <h2 class="intro">Upload 'Stepper.ino'</h2>
             </section>
         </div>
     </div>

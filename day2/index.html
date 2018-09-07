@@ -50,27 +50,81 @@
                 <ul>
                     <h3>Topics for Today:</h3>
                     <li class="fragment">Warm up: getting to a known good state</li>
+                    <li class="fragment">Soldering exercise</li>
                     <li class="fragment">Introduction to addressable LED's</li>
                     <li class="fragment">Programming exercise: Writing custom functions</li>
                     <li class="fragment">Sensor lecture</li>
                     <li class="fragment">Case study: Breathing Machine, Lynn Hershman Leeson</li>
                     <li class="fragment">Detecting proximity with the HC-04 ultrasonic rangefinder</li>
-                    <li class="fragment">Introduction to serial communication</li>
                     <li class="fragment">Introduction to the Johnny Five API for Internet-connected projects</li>
                     <li class="fragment">Programming exercise: Build a lamp connected to the DC Metro(WMATA) API</li>
                 </ul>
             </section>
-
-
             <section>
-                <p>Connect the WS2812's</p>
-                <img src="img/irws.png" height="600">
+                <h2>Controlling a Servo</h2>
+                <img src="img/servo.png" height="500">
+                <a href="#" class="navigate-down">
+                </a>
+            </section>
+            <section>
+                A Servo is a small device that has an output shaft. This shaft can be positioned to specific angular
+                positions by sending the servo a coded signal. As long as the coded signal exists on the input line,
+                the servo will maintain the angular position of the shaft. As the coded signal changes, the angular
+                position of the shaft changes. In practice, servos are used in radio controlled airplanes to position
+                control surfaces like the elevators and rudders. They are also used in radio controlled cars, puppets,
+                and of course, robots.
+            </section>
+            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
+                data-background-transition="zoom">
+                <h2>Servo_Sweep.ino</h2>
+                <pre><code>
+    #include <Servo.h>
+    Servo myservo; // create servo object to control a servo
+    // a maximum of eight servo objects can be created
+    int pos = 0; // variable to store the servo position
+    
+    void setup() {
+    myservo.attach(9); // attaches the servo on pin 9 to the servo object }
+    
+    void loop() {
+    for(pos = 0; pos < 180; pos += 1) // goes from 0 degrees to 180 degrees
+    }
+    { myservo.write(pos); delay(15);
+    // in steps of 1 degree
+    // tell servo to go to position in variable 'pos'
+    // waits 15ms for the servo to reach the position
+    }
+    for(pos = 180; pos>=1; pos-=1) // goes from 180 degrees to 0 degrees 
+    {
+    myservo.write(pos); // tell servo to go to position in variable 'pos'
+    delay(15); // waits 15ms for the servo to reach the position 
+    }
+    </code></pre>
+            </section>
+            <section>
+                <h3>Servo With Potentiometer</h3>
+                <img src="img/servo_w_pot.png" height="600">
+            </section>
+            <section>
+                <h3 class="intro">Upload SERVO_KNOB.INO</h3>
+            </section>
+            <section>
+                <p>Soldering</p>
+                <img src="img/soldering.jpg">
             </section>
 
             <section>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/f95i88OSWB4" frameborder="0"
                     allowfullscreen></iframe>
             </section>
+
+            <section>
+                <p>Soldering</p>
+                <img src="img/lcd_header.jpeg" height="200">
+                <img src="img/ws_header.jpeg" height="200">
+            </section>
+
+
             <section>
                 <img src="img/lcd2.jpg"><br>
             </section>
@@ -79,6 +133,62 @@
             </section>
             <section>
                 <img src="img/banzi.jpg"><br> "You don't need anyone's permission to create something great"
+            </section>
+
+            <section>
+                <h3>Introduction to Addressable LEDS</h3>
+                <img src="img/wsring.png" height="200">
+                <img src="img/neostrip.png">
+                <img src="img/ws2811.png">
+            </section>
+            <section>
+                <h3>Basic LEDS Need a lot of Wiring</h3>
+                <img src="img/led.png" height="300">
+            </section>
+            <section>
+                <h3>Addressable LEDs provide circuitry to communicate serially</h3>
+                <img src="img/WS2812_c.jpg" height="300">
+            </section>
+            <section>
+                <h3>Each LED has a chip to receive, decode, drive LED’s and propagate data</h3>
+                <img src="img/rgb-smd-led-with-wit-integrated-ws2812b-chip-type.jpg" height="300">
+            </section>
+            <section>
+                <h3>They are chainable, fairly cheap and have their own resistors etc..</h3>
+                <img src="img/wall.jpg" height="400">
+                <h3>You can drive 10000's from 1 microcontroller</h3>
+            </section>
+            <section>
+                <p>Adafruit has branded these Neopixels</p>
+                <img src="img/ada.png">
+            </section>
+            <section>
+                <p>You can get them for half the price on Ebay as ws2812's</p>
+                <img src="img/ebay.png">
+            </section>
+            <section>
+                <h4>These have a 5v, GND and DIN pin</h4>
+                <img src="img/ring_pins.jpeg" height="400">
+                <h4>Connect 5v to 5v, GND to GND and DIN to Pin6</h4>
+            </section>
+            <section>
+                <p>Import the NeoPixel Library</p>
+                <img src="img/import_library.png">
+            </section>
+            <section>
+                <p>Import the NeoPixel Library</p>
+                <img src="img/neolib.png">
+            </section>
+            <section>
+                <p>Let's try some examples and write our own code!</p>
+            </section>
+            <section>
+                <p>FastLED</p>
+                <a href="http://fastled.io/">Fast LED Library</a>
+            </section>
+            <section>
+                <p>APA102</p>
+                <a href="https://cpldcpu.wordpress.com/2014/08/27/apa102/">APA102 aka “Superled”</a>
             </section>
 
 
@@ -113,7 +223,7 @@
             </section>
             <section data-background-image="img/nodejs.png">
             </section>
-            <section>
+            <!-- <section>
                 <img src="img/v8.png" height="300"><img src="img/chrome.png" height="300">
                 <br>
                 <p>The V8 JavaScript Engine is an open source JavaScript engine in the Chrome browser</p>
@@ -375,12 +485,14 @@ bart.on('dbrk', function(estimates) {
             </section>
             <section>
                 <p>
-                    <a="https://github.com/esp8266/Arduino">ESP8266 core for Arduino</a> </p> </section> <section>
-                        <p>
-                            Getting Set up:
-                            <br> - First install the USB driver <a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx">SiLabs
-                                serial driver</a>
-                        </p>
+                    <a href="https://github.com/esp8266/Arduino">ESP8266 core for Arduino</a> </p>
+            </section>
+            <section>
+                <p>
+                    Getting Set up:
+                    <br> - First install the USB driver <a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx">SiLabs
+                        serial driver</a>
+                </p>
             </section>
             <section>
                 <p>
@@ -460,7 +572,7 @@ bart.on('dbrk', function(estimates) {
 
             <section>
                 <p><a href="http://www.blynk.cc/">Blynk</a></p>
-            </section>
+            </section> -->
 
             <!--
             <section>
