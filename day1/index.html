@@ -38,9 +38,12 @@
             </section>
 
             <section data-background="img/background.png" data-background-transition="zoom">
-                <p><b>Slides are here: <br>https://mhellar.github.io/electronicartworks/day1</b></p>
+                <p><b>Slides are here: <br>https://mhellar.github.io/saam_mcu/day1</b></p>
                 <br>
-                <p><b><br><a href="http://bit.ly/2kD296R">Grab the code here: http://bit.ly/2kD296R</a></b></p>
+                <p><b><br><a href="https://bit.ly/2oMdfqU">Grab
+                            the
+                            code here: https://bit.ly/2oMdfqU
+                        </a></b></p>
             </section>
 
 
@@ -89,12 +92,46 @@
 
             <section>
                 <h4>WHAT IS A MICROCONTOLLER:</h4>
-                <p>We call these devices “microcontrollers”. Micro because they’re small, and controller because they
-                    “control”
-                    machines, gadgets, whatever!
-                    <br><br> They’re cool because, you can build a machine or device, write programs to control it and
-                    then
-                    let it work for you automatically. And they are cheap!</p>
+                <p>It has built in "I/O" (input/output) capabilities. So it can read and write digital and analog
+                    values/states, and connect directly to the "real world". A microcontroller, unlike a microprocessor
+                    can connect directly to switches, buttons, LCD displays, LEDS, relays and serial ports
+                </p>
+            </section>
+            <section>
+                <img src="img/hackbot.jpeg" height="300">
+            </section>
+
+            <section>
+                <h4>WHAT IS A MICROCONTOLLER:</h4>
+                <p>Microcontrollers are generally used for low to medium complexity, specific tasks in equipment. This
+                    contrasts with the powerful, number crunching microprocessors used in PCs which handle a variety of
+                    software applications.
+                </p>
+            </section>
+
+            <section>
+                <h4>WHAT IS A MICROCONTOLLER:</h4>
+                <p>Microcontrollers are often used in portable devices which run on batteries, e.g. digital cameras. So
+                    they are often low powered with a small current consumption (unlike the heat sinked, fan cooled
+                    microprocessor in a desktop computer)
+                </p>
+            </section>
+
+            <section>
+                <h4>WHAT IS A MICROCONTOLLER:</h4>
+                <p>Compared to the microprocessor in a PC, the RAM within a microcontroller can typically range from
+                    4mb down to as little as 1k
+                </p>
+            </section>
+            <section>
+                <img src="img/CPUvMCU.png" height="300">
+            </section>
+            <section>
+                <h4>WHAT IS A MICROCONTOLLER:</h4>
+                <p>The program in a microcontroller is usually stored in EPROM or EEPROM. This is a type of non
+                    volatile (program doesn't disappear when the device is turned off) memory which can be continuously
+                    wiped and rewritten.
+                </p>
             </section>
 
             <section>
@@ -390,7 +427,7 @@
 
                 <p>An electric circuit is a closed loop where electric current can flow. Electricity flows like water
                     from
-                    Ground to Positive.</p>
+                    Ground to Positive Voltage</p>
                 <img src="img/e2.png" height="400"><br>
                 <p>As the current passes though a component such as an LED it causes it to light up.</p>
             </section>
@@ -727,17 +764,17 @@ delay(i); // set delay based on the value of i
                 <h4>Case Study: Bruce Nauman, Life Death/Knows Doesn't Know</h4>
                 <img src="img/orion.jpg"><br>
             </section>
-            <section>
-                <h4>Optoisolator</h4>
-                <img src="img/Opto2.jpg" height="200"><br>
-                <img src="img/opto.png" height="200"><br>
-            </section>
 
             <section>
                 <h4>Case Study: Bruce Nauman, Life Death/Knows Doesn't Know</h4>
                 <img src="img/IMG_1698.JPG" height="600"><br>
             </section>
 
+            <section>
+                <h4>Optoisolator</h4>
+                <img src="img/Opto2.jpg" height="200"><br>
+                <img src="img/opto.png" height="200"><br>
+            </section>
 
             <section>
                 <h4>Knight Rider</h4>
@@ -806,11 +843,22 @@ delay(i); // set delay based on the value of i
                 <img src="img/digiin4.png" height="600">
             </section>
             <section>
+                <img src="img/Pull-down-Resistor.jpg" height="600">
+            </section>
+            <section>
+                <a href="https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/">Pinmode</a>
+            </section>
+            <section>
                 <img src="img/digiin5.png" height="600">
             </section>
             <section>
                 <img src="img/digiin6.png" height="600">
             </section>
+
+            <section>
+                <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">analogWrite()</a>
+            </section>
+
             <section>
                 Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital
                 control is used to
@@ -831,6 +879,7 @@ delay(i); // set delay based on the value of i
                 (always on), and analogWrite(127) is a 50% duty cycle (on half the time) for example.
                 <br><img src="img/pwm2.png" height="300">
             </section>
+
             </section>
             <section>
                 <h3>Analog Input</h3>
@@ -1023,11 +1072,43 @@ void loop() {
             </section>
             <section>
                 <p>Stepper Motors</p>
+                <img src="img/step_table.jpg">
+            </section>
+            <section>
+                <p>Stepper Motors</p>
                 <img src="img/28byj48.png">
             </section>
             <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
                 data-background-transition="zoom">
                 <h2 class="intro">Upload 'Stepper.ino'</h2>
+            </section>
+            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px"
+                data-background-transition="zoom">
+                Let's play with the code
+            </section>
+            <section>
+                <p>Worth a look</p>
+                <a href="https://github.com/waspinator/AccelStepper">Accelstepper</a>
+            </section>
+            <section>
+                Case Study: Greg Lynn, RV Prototype
+            </section>
+            <section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fUXg0CN5O-Y" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </section>
+            <section>
+                <img src="img/gl1.png">
+            </section>
+            <section>
+                <img src="img/gl2.png" height="500">
+            </section>
+            <section>
+                <img src="img/gl3.png">
+            </section>
+            <section>
+                National Electrical Manufacturers Association(NEMA) Standard Steppers<br>
+                <img src="img/nema.jpg">
             </section>
         </div>
     </div>

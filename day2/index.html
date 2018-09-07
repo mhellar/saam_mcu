@@ -38,7 +38,7 @@
             </section>
 
             <section data-background="img/background.png" data-background-transition="zoom">
-                <p><b>Slides are here: <br>https://mhellar.github.io/saam_mcu/day1</b></p>
+                <p><b>Slides are here: <br>https://mhellar.github.io/saam_mcu/day2</b></p>
                 <br>
                 <p><b><br><a href="https://bit.ly/2oMdfqU">Grab
                             the
@@ -56,6 +56,7 @@
                     <li class="fragment">Sensor lecture</li>
                     <li class="fragment">Case study: Breathing Machine, Lynn Hershman Leeson</li>
                     <li class="fragment">Detecting proximity with the HC-04 ultrasonic rangefinder</li>
+                    <li class="fragment">Graphing sensor data with the ADXL345 Accelerometer</li>
                     <li class="fragment">Introduction to the Johnny Five API for Internet-connected projects</li>
                     <li class="fragment">Programming exercise: Build a lamp connected to the DC Metro(WMATA) API</li>
                 </ul>
@@ -109,6 +110,9 @@
                 <h3 class="intro">Upload SERVO_KNOB.INO</h3>
             </section>
             <section>
+                <h3 class="intro">try SerialServoControl</h3>
+            </section>
+            <section>
                 <p>Soldering</p>
                 <img src="img/soldering.jpg">
             </section>
@@ -131,10 +135,6 @@
             <section>
                 <img src="img/header.jpg"><br>
             </section>
-            <section>
-                <img src="img/banzi.jpg"><br> "You don't need anyone's permission to create something great"
-            </section>
-
             <section>
                 <h3>Introduction to Addressable LEDS</h3>
                 <img src="img/wsring.png" height="200">
@@ -221,7 +221,105 @@
             <section>
                 <a href="https://www.arduino.cc/en/Reference/LiquidCrystal">Arduino Liquid Crystal Display Library</a>
             </section>
-            <section data-background-image="img/nodejs.png">
+
+            <section>
+                For the purposes of physical interaction design, a sensor is a transducer that converts a form of
+                energy into an electrical signal.
+            </section>
+            <section>
+                Sensors<br>
+                <img src="img/sens1.jpg" height="150"><br>
+                <img src="img/sens2.jpg" height="150"><br>
+                <img src="img/sens3.jpg" height="150"><br>
+            </section>
+            <section>
+                Places to get Sensors<br>
+                <a href="https://www.adafruit.com/category/35">Adafruit</a><br>
+                <a href="https://www.sparkfun.com/categories/23">Sparkfun</a><br>
+                <a href="https://www.dfrobot.com/category-36.html">DFRobot</a><br>
+                <a href="https://www.seeedstudio.com/category/Interaction-c-1006.html">Seeed Studios</a><br>
+            </section>
+            <section>
+                Case Study: Lynn Hershman Leeson, Breathing Machines
+            </section>
+            <section>
+                <img src="img/article00.jpg" height="300"><br>
+                <img src="img/CivicRadar-web-38.jpg" height="300"><br>
+            </section>
+            <section>
+                <img src="img/breath1.png" height="300"><br>
+                <img src="img/breath2.png" height="300"><br>
+            </section>
+            <section>
+                <img src="img/wave_shield5_580x@2x.jpg" height="300"><br>
+                <img src="img/teensy.jpg" height="300"><br>
+            </section>
+            <section>
+                <img src="img/SharpIR.jpg" height="300"><br>
+            </section>
+            <section>
+                <img src="img/hc04.jpeg" </section> </section> <section>
+                <p>The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like bats do. It offers
+                    excellent non-contact range detection with high accuracy and stable readings in an easy-to-use
+                    package. From 2cm to 400 cm or 1” to 13
+                    feet. It operation is not affected by sunlight or black material like Sharp rangefinders are
+                    (although acoustically soft materials like cloth can be difficult to detect). It comes complete
+                    with ultrasonic transmitter and receiver module.</p>
+            </section>
+            <section>
+                <img src="img/schematics.png">
+            </section>
+            <section>
+                <p>Upload the Arduino sketch in hc-04-code/hc-04 and then check the output in the serial monitor</p>
+            </section>
+            <section>
+                <p>ADXL354 accelerometer</p>
+                <img src="img/accel.png">
+            </section>
+            <section>
+                <p>An accelerometer is an electromechanical device that will measure acceleration forces. These forces
+                    may be static, like the constant force of gravity pulling at your feet, or they could be dynamic -
+                    caused by moving or vibrating the accelerometer.By
+                    measuring the amount of static acceleration due to gravity, you can find out the angle the device
+                    is tilted at with respect to the earth. By sensing the amount of dynamic acceleration, you can
+                    analyze the way the device is moving.
+                </p>
+            </section>
+            <section>
+                <p>ADXL354 accelerometer</p>
+                <img src="img/adxl345.png" height="400">
+            </section>
+            <section>
+                <ul>
+                    <li>Connect</li>
+                    <li>GND to GND</li>
+                    <li>3v to 3v</li>
+                    <li>SCL to A5</li>
+                    <li>SDA to A4</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>Open the Library Manager in Arduino</li>
+                    <li>Install Adafruit ADXL Library</li>
+                    <li>Install Adafruit Universal Sensor Library</li>
+                    <li>Install ArduinoJSON Library</li>
+                    <li>Run Sensortest from the Examples</li>
+                </ul>
+            </section>
+            <section>
+                Connecting to other software
+                <iframe src="https://player.vimeo.com/video/288692719" width="640" height="360" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </section>
+            <section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ngygk20M1pI" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </section>
+            <section>
+                We can communicate with the microcontroller with other software via the serial port which allows us to
+                send and recieve data. Most languages have capabilites or libraries that allow for serial port
+                communcation.
             </section>
             <!-- <section>
                 <img src="img/v8.png" height="300"><img src="img/chrome.png" height="300">
