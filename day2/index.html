@@ -193,39 +193,6 @@
                 <p>APA102</p>
                 <a href="https://cpldcpu.wordpress.com/2014/08/27/apa102/">APA102 aka “Superled”</a>
             </section>
-            <section data-background-image="img/lcd.png">
-            </section>
-            <section>
-                To wire your LCD screen, connect the following pins:
-                <br><br>
-                <ul>
-                    <li>LCD RS pin to digital pin 12</li>
-                    <li>LCD Enable pin to digital pin 11</li>
-                    <li>LCD D4 pin to digital pin 5</li>
-                    <li>LCD D5 pin to digital pin 4</li>
-                    <li>LCD D6 pin to digital pin 3</li>
-                    <li>LCD D7 pin to digital pin 2</li><br> Additionally, wire a 10k pot to +5V and GND, with it's
-                    wiper
-                    (output) to LCD screens VO pin (pin3). A 220 ohm resistor is used to power the backlight of the
-                    display,
-                    usually on pin 15 and 16 of the LCD connector
-            </section>
-            <section>
-                <img src="img/lcd.png"><br>
-            </section>
-            <section>
-                <img src="img/hopper.jpg"><br>
-            </section>
-            <section>
-                Run HelloWorldLCD
-            </section>
-            <section>
-                Run SerialDisplay - Open serial monitor and pass some data
-            </section>
-            <section>
-                <a href="https://www.arduino.cc/en/Reference/LiquidCrystal">Arduino Liquid Crystal Display Library</a>
-            </section>
-
             <section>
                 For the purposes of physical interaction design, a sensor is a transducer that converts a form of
                 energy into an electrical signal.
@@ -322,6 +289,38 @@
                     <li>Run Sensortest from the Examples adxl345_plotter</li>
                 </ul>
             </section>
+            <section data-background-image="img/lcd.png">
+            </section>
+            <section>
+                To wire your LCD screen, connect the following pins:
+                <br><br>
+                <ul>
+                    <li>LCD RS pin to digital pin 12</li>
+                    <li>LCD Enable pin to digital pin 11</li>
+                    <li>LCD D4 pin to digital pin 5</li>
+                    <li>LCD D5 pin to digital pin 4</li>
+                    <li>LCD D6 pin to digital pin 3</li>
+                    <li>LCD D7 pin to digital pin 2</li><br> Additionally, wire a 10k pot to +5V and GND, with it's
+                    wiper
+                    (output) to LCD screens VO pin (pin3). A 220 ohm resistor is used to power the backlight of the
+                    display,
+                    usually on pin 15 and 16 of the LCD connector
+            </section>
+            <section>
+                <img src="img/lcd.png"><br>
+            </section>
+            <section>
+                <img src="img/hopper.jpg"><br>
+            </section>
+            <section>
+                Run HelloWorldLCD
+            </section>
+            <section>
+                Run SerialDisplay - Open serial monitor and pass some data
+            </section>
+            <section>
+                <a href="https://www.arduino.cc/en/Reference/LiquidCrystal">Arduino Liquid Crystal Display Library</a>
+            </section>
             <section>
                 Connecting to other software
                 <iframe src="https://player.vimeo.com/video/288692719" width="640" height="360" frameborder="0"
@@ -340,8 +339,313 @@
                 communcation.
             </section>
             <section>
-                For todays examples we will comminucate with the Javascript language and something called NodeJS
+                For todays examples we will communicate with the Javascript language and something called NodeJS
             </section>
+            <section>
+                Javascript is a very popular programming language as it is the language of the browser
+                <img src="img/cleaningorder2.gif" height="500">
+            </section>
+            <section>
+                <a href="https://threejs.org/examples/#css3d_sprite">It has grown very sophisticated over the years</a>
+            </section>
+            <section>
+                The challenge with Javascript is that it only ran in the browser
+            </section>
+            <section data-background="img/nodejs.png">
+            </section>
+            <section>
+                <img src="img/v8.png" height="300"><img src="img/chrome.png" height="300">
+                <br>
+                <p>The V8 JavaScript Engine is an open source JavaScript engine in the Chrome browser</p>
+            </section>
+
+            <section>
+                <img src="img/dahl.jpg" height="500">
+                <br>
+                <p>NodeJS was created By Ryan Dahl</p>
+            </section>
+            <section>
+                <h3>
+                    NODE IS ESSENTIALLY V8 minus the browser, WITH SOME ADDITIONS SO THAT YOU CAN USE IT TO WRITE
+                    STAND ALONE PROGRAMS.
+                    <br>
+                    <a href="https://nodejs.org/api/http.html">Node API</a>
+                </h3>
+            </section>
+
+            <section>
+                <h3>You can run node from the command line<br>
+                    Just type node</h3>
+                <img src="img/noderepl.png" height="400">
+                <a href="#" class="navigate-down">
+                </a>
+            </section>
+            <section>
+                <h3>A Node program in a file<br>
+                    <h3>Contents of app.js</h3>
+                    <pre><code class="hljs" data-trim contenteditable width>
+/**
+ * 01 - Getting Started
+ * Declare a variable, perform some math, output the result
+ */
+var initialNumber = 0;
+var finalNumber = initialNumber + 10;
+
+console.log(finalNumber);
+                        					</code></pre>
+
+            </section>
+
+            <section>
+                <h3>simple little programs</h3>
+                <br>
+                <p>cd code_node1/simple from the terminal</p><br>
+                <p>and open in visual studio code</p>
+                <a href="#" class="navigate-down">
+                </a>
+            </section>
+            <section>
+                <h3>type 'node app.js'</h3>
+                <pre><code class="hljs" data-trim contenteditable width>
+/**
+ * 01 - Getting Started
+ * Declare a variable, perform some math, output the result
+ */
+var initialNumber = 0;
+var finalNumber = initialNumber + 10;
+
+console.log(finalNumber);
+</code></pre>
+            </section>
+            <section>
+                Node has thousands of libraries, know as modules available
+            </section>
+            <section>
+                <p>
+                    NPM is an online repository of JavaScript modules, many of which are specifically written for Node.
+                    When you
+                    install Node on your computer, you also get a program called npm(Node Package Manger), which
+                    provides a
+                    convenient interface to this repository.
+                </p>
+                <br>
+                <a href="https://www.npmjs.com/">https://www.npmjs.com/</a>
+            </section>
+            <section>
+                <a href="https://www.npmjs.com/package/serialport">Node serialport module</a>
+            </section>
+            <section>
+                Don't disconnect the LCD, But do hook up the accelerometer.
+            </section>
+            <section>
+                <p>ADXL354 accelerometer</p>
+                <img src="img/adxl345.png" height="400">
+            </section>
+            <section>
+                <ul>
+                    <li>Connect</li>
+                    <li>GND to GND</li>
+                    <li>3v to 3v</li>
+                    <li>SCL to A5</li>
+                    <li>SDA to A4</li>
+                </ul>
+            </section>
+            <section>upload adxl345_serial to arduino</section>
+            <section>
+                Open serialbasic in VS code and also CD to it in the terminal. Change line 4 to match your serial port
+                i.e. /dev/tty.usbmodem1421
+            </section>
+            <section>
+                In the terminal type npm install. Then type node index.js
+            </section>
+            <section>
+                Writing results to a file
+            </section>
+            <section>
+                Open serialtocsv in VS code and also CD to it in the terminal. Change line 4 to match your serial port
+                i.e. /dev/tty.usbmodem1421
+            </section>
+            <section>
+                In the terminal type npm install. Then type node index.js
+            </section>
+            <section>
+                Passing data to a webpage
+            </section>
+            <section>
+                Open serial_ws in VS code and also CD to it in the terminal. Change line 4 to match your serial port
+                i.e. /dev/tty.usbmodem1421
+            </section>
+            <section>
+                In the terminal type npm install. Then type node index.js Open the browser to http://localhost:3000
+            </section>
+            <section>
+                Passing data to a webpage 2
+            </section>
+            <section>
+                Open serial_ws_inter_chart in VS code and also CD to it in the terminal. Change line 4 to match your
+                serial port
+                i.e. /dev/tty.usbmodem1421
+            </section>
+            <section>
+                In the terminal type npm install. Then type node index.js Open the browser to http://localhost:3000
+            </section>
+            <section>
+                <a href="http://smoothiecharts.org/">Smoothie Charts</a>
+            </section>
+            <section data-background="img/johnny-five-fb.png" data-background-transition="zoom">
+
+            </section>
+
+            <section data-background="img/sc_poster.jpg" data-background-size="600px" data-background-transition="zoom">
+            </section>
+
+            <section>
+                <p>
+                    Johnny-Five is the original JavaScript Robotics programming framework. Released by Bocoup in 2012,
+                    Johnny-Five
+                    is maintained by a community of passionate software developers and hardware engineers. Over 75
+                    developers have
+                    made contributions towards building
+                    a robust, extensible and composable ecosystem.
+                </p>
+            </section>
+            <section>
+                Don't disconnect the LCD, But do hook up an LED.
+            </section>
+            <section data-background="img/led5.png" data-background-size="500px" data-background-transition="zoom">
+            </section>
+            <section>
+                <h3>Starting a new Node app</h3>
+                <ul>
+                    <li>Create a new folder named, 'J5_led_1'</li>
+                    <li class="fragment">Open the terminal</li>
+                    <li class="fragment">type 'cd' & space</li>
+                    <li class="fragment">drag your folder to the terminal and hit return</li>
+                </ul>
+            </section>
+
+            <section>
+
+                <ul>
+                    <li>Now we are in our new folder in the terminal</li>
+                    <li class="fragment">Type 'npm init' & hit return</li>
+                    <li class="fragment">fill out the questions</li>
+                    <li class="fragment">drag your folder onto Sublime Text</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>type 'npm install johnny-five --save</li>
+                    <li class="fragment">Have a look at the package.json file that was generated</li>
+                    <li class="fragment">This stores metadata about our app</li>
+                </ul>
+            </section>
+
+            <section>
+                <b>
+                    <p>contents of package.json</p>
+                </b></br>
+                <code class="hljs" data-trim contenteditable><pre>
+{
+  "name": "J5_led_1",
+  "version": "1.0.0",
+  "description": "A Johnny Five LED app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^0.8.106"
+  }
+}
+                        </pre>
+                                                </code>
+            </section>
+
+            <section>
+                <h3>create a new file, enter the following code and save as index.js in your new folder</h3>
+                <code class="hljs" data-trim contenteditable><pre>
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led(6);
+  led.blink(500);
+});
+                        </pre>
+                                                </code>
+            </section>
+            <section>
+                <ul>
+                    <li>!!! Upload firmata to arduino !!!</li>
+                    <li class="fragment">run 'node index.js' at the terminal</li>
+                </ul>
+            </section>
+            <section>
+                <h3>try a pulse</h3>
+                <code class="hljs" data-trim contenteditable><pre>
+ var five = require("johnny-five");
+ var board = new five.Board();
+ 
+ board.on("ready", function() {
+   var led = new five.Led(6);
+ led.pulse(500);
+ });
+                        </pre>
+                                                </code>
+            </section>
+            <section>
+                <b>
+                    <p>Led Animations</p>
+                </b></br>
+                <code class="hljs" data-trim contenteditable><pre>
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led(6);
+led.pulse({
+  easing: "linear",
+  duration: 3000,
+  cuePoints: [0, 0.2, 0.4, 0.6, 0.8, 1],
+  keyFrames: [0, 10, 0, 50, 0, 255],
+  onstop: function() {
+    console.log("Animation stopped");
+  }
+});
+});
+                        </pre>
+                        </code>
+            </section>
+
+            <section>
+                <p>Reference</i>
+                </p><br>
+                <a href="http://johnny-five.io/api/led/">LED API</a><br>
+                <a href="http://johnny-five.io/api/animation/#segment-properties">Animation API</a><br>
+                <a href="http://johnny-five.io/api/">Full API</a>
+
+            </section>
+            <section>
+                Johnny-Five with the LCD
+            </section>
+            <section>
+                Open j5_lcd in VS code and also CD to it in the terminal. Change line 4 to match your
+                serial port
+                i.e. /dev/tty.usbmodem1421
+            </section>
+            <section>
+                In the terminal type npm install. Then type node app.js
+            </section>
+            <section>
+                Hit CTRL+C twice, Then type node app2.js
+            </section>
+            <section>
+                <a href="http://johnny-five.io/examples/lcd/">Johnny Five LCD</a>
+            </section>
+
             <!-- <section>
                 <img src="img/v8.png" height="300"><img src="img/chrome.png" height="300">
                 <br>
