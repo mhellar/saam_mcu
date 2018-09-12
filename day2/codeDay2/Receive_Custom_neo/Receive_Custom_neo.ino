@@ -13,7 +13,7 @@
 #define PIN 4
 
 //NeoPixel setup
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(8, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(31, PIN, NEO_GRB + NEO_KHZ800);
 
 // temporary variables to save latest IR input
 uint8_t IRProtocol = 0;
